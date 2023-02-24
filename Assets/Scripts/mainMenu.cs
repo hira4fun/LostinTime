@@ -8,7 +8,7 @@ public class mainMenu : MonoBehaviour
     public string firstLevel;
     public GameObject optionsScreen;
     public GameObject creditsScreen;
-    public GameObject binderRing;
+    public GameObject background;
     public int currentLevel = 1;
 
     // Start is called before the first frame update
@@ -29,31 +29,31 @@ public class mainMenu : MonoBehaviour
         {
             PlayerPrefs.SetInt("CurrentLevel", currentLevel);
         }
-        SceneManager.LoadScene("Real World");
+        SceneManager.LoadScene("Level");
     }
 
     public void OpenOptions()
     {
         optionsScreen.SetActive(true);
-        binderRing.SetActive(false);
+        background.SetActive(false);
     }
 
     public void CloseOptions()
     {
         optionsScreen.SetActive(false);
-        binderRing.SetActive(true);
+        background.SetActive(true);
     }
 
     public void OpenCredits()
     {
         creditsScreen.SetActive(true);
-        binderRing.SetActive(false);
+        background.SetActive(false);
     }
 
     public void CloseCredits()
     {  
         creditsScreen.SetActive(false);
-        binderRing.SetActive(true);
+        background.SetActive(true);
     }
 
     public void ResetLevel()
