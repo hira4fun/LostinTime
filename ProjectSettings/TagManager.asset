@@ -7,6 +7,7 @@ TagManager:
   - Event
   - Platform
   - AudioManager
+  - Enemy
   layers:
   - Default
   - TransparentFX
