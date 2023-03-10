@@ -3,39 +3,90 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-private class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
+    public WhipAttack whipAttack;
 
     Vector2 movementInput;
     Rigidbody2D rb;
+    Animator animator;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+
+    bool canMove = true;
     
     // Start is called before the first frame update
-    private void Start()
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate() {
-        // If movement input is not 0, try to move
-        if(movementInput != Vector2.zero) {
+        if(canMove){
+            // If movement input is not 0, try to move
+            if(movementInput != Vector2.zero){
+                bool success = TryMove(movementInput);
+
+                if(!success && movementInput.x > 0) {
+                    success = TryMove(new Vector2(movementInput.x, 0));
+                }
+
+                if(!success && movementInput.y > 0) {
+                    success = TryMove(new Vector2(0, movementInput.y));
+                }
+
+                animator.SetBool("isMoving", success);
+            } else {
+                animator.SetBool("isMoving", false);
+            }
+        }
+        
+
+    }
+
+    private bool TryMove(Vector2 direction) {
+        if(direction != Vector2.zero){
+            // Check for potential collisions
             int count = rb.Cast(
-                movementInput, // X and Y values between -1 and 1 represent the direction from the body to look for collisions
-                movementFilter, // The settings that determine where a collision can occur on such layers to collide with
+                direction, // X and Y values between -1 and 1 that represent the direction from the body to look for collisions
+                movementFilter, // The settings that determine where a collision can occur on such as layers to collide with
                 castCollisions, // List of collisions to store the found collisions into after the Cast is finished
                 moveSpeed * Time.fixedDeltaTime + collisionOffset); // The amount to cast equal to the movement plus an offset
-            
-            if(count == 0) {
-                rb.MovePosition(rb.position + movementInput * moveSpeed * Time.fixedDeltaTime);
+
+            if(count == 0){
+                rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
+                return true;
+            } else {
+                return false;
             }
+        } else {
+            // Can't move if there's no direction to move in
+            return false;
         }
     }
 
-    private void OnMove(InputValue movementValue) {
+    void OnMove(InputValue movementValue) {
         movementInput = movementValue.Get<Vector2>();
+    }
+
+    void OnFire() {
+        animator.SetTrigger("whipAttack");
+    }
+
+    public void WhipAttack(){
+        LockMovement();
+        whipAttack.AttackSouth();
+    }
+
+    public void LockMovement(){
+        canMove = false;
+    }
+
+    public void UnlockMovement(){
+        canMove = true;
     }
 }
