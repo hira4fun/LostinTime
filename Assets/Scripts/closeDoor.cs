@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveOnToNextAreaScript : Trigger
+public class closeDoor : Trigger
 {
+
     GameObject instance;
-    bool isTrigger = false;
+    bool isTrigger = true;
     public BoxCollider2D box;
     public GameObject boxSprite;
 
     public override void Action()
     {
-        isTrigger = true;
-        box.isTrigger = true;
-        boxSprite.SetActive(true);
+        isTrigger = false;
+        box.isTrigger = false;
+        boxSprite.SetActive(false);
 
         //Debug.Log(isTrigger);
     }
 
 
 }
+
+

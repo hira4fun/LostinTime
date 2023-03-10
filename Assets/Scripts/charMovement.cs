@@ -27,6 +27,11 @@ public class charMovement : MonoBehaviour
             rb.velocity = movement * moveSpeed;
             animator.SetFloat("Speed", rb.velocity.magnitude);
         }
+        if (pause)
+        {
+            rb.velocity = Vector2.zero;
+
+        }
 
     }
 }

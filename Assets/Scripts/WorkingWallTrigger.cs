@@ -18,8 +18,8 @@ public class WorkingWallTrigger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moveCam = new Vector3(camOffset, 0, 0);
-        moveCat = new Vector3(catOffset, 0, 0);
+        moveCam = new Vector3(0, camOffset, 0);
+        moveCat = new Vector3(0, catOffset, 0);
         layerMask = LayerMask.GetMask("Player");
     }
 
@@ -31,15 +31,15 @@ public class WorkingWallTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        float xe = cat.transform.position.x;
-        float goalx = box.transform.localPosition.x;
-        if (xe < goalx && counter >= countOffset && (col.gameObject.tag == "Player"))
+        float catY = cat.transform.position.y;
+        float boxY = box.transform.localPosition.y;
+        if (catY < boxY && counter >= countOffset && col.CompareTag("Player"))
         {
             cam.transform.position += moveCam;
             cat.transform.position += moveCat;
             counter = 0;
         }
-        else if (xe >= goalx && counter > countOffset && (col.gameObject.tag == "Player"))
+        else if (catY >= boxY && counter > countOffset && col.CompareTag("Player"))
         {
             cam.transform.position -= moveCam;
             cat.transform.position -= moveCat;
