@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TextTrigger : Trigger
+public class TextTriggerCave : Trigger
 {
     public GameObject TextBox;
     // public GameObject HeadBox;
@@ -17,10 +17,11 @@ public class TextTrigger : Trigger
     // GameObject headInstance;
     void Start()
     {
-        playerTag = "Player";
+        playerTag = "Player2";
 
     }
-    void Instant() {
+    void Instant()
+    {
         instance = Instantiate(TextBox, TextBox.transform.position, Quaternion.identity);
         instance.SetActive(true);
         instance.GetComponent<Dialogue>().pages = pages;

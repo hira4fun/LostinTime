@@ -490,6 +490,7 @@ MonoBehaviour:
   forceInteract: 0
   repeatable: 1
   value: 0
+  playerTag: Player
   TextBox: {fileID: 829622463}
   pages:
   - 'Woah an Artifact! It looks like something from medieval times! '
@@ -530,6 +531,7 @@ MonoBehaviour:
   forceInteract: 0
   repeatable: 1
   value: 0
+  playerTag: Player
   box: {fileID: 767482841}
   boxSprite: {fileID: 1425600061}
   audioManager: {fileID: 1595186131}
@@ -774,6 +776,81 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.2}
   m_EdgeRadius: 0
+--- !u!1 &181766965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 181766966}
+  - component: {fileID: 181766967}
+  - component: {fileID: 181766968}
+  m_Layer: 0
+  m_Name: dialogue2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &181766966
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181766965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1829063388}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &181766967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181766965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cc2c7c15ce00ab42b2c814142f2c84a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  playerTag: Player2
+  TextBox: {fileID: 829622463}
+  pages:
+  - ME CAVEMAN
+  - HELP SISTER
+  - BREAK PUNY DOOR
+  emotes: 000000000000000000000000
+  controller: {fileID: 22100000, guid: a287e73abbf59654d926ab06a6f7d2cb, type: 2}
+  startSprite: {fileID: 21300016, guid: f776e2e9690501e41a2e5b81ceb440b9, type: 3}
+  audioManager: {fileID: 1595186131}
+  isTalking: 1
+--- !u!58 &181766968
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181766965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.15
 --- !u!1 &207980964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1165,7 @@ MonoBehaviour:
   forceInteract: 0
   repeatable: 1
   value: 0
+  playerTag: Player
   originalCharacter: {fileID: 1140725181}
   newCharacter: {fileID: 1604312457}
   audioManager: {fileID: 1595186131}
@@ -1532,6 +1610,39 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &382583982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 382583983}
+  m_Layer: 0
+  m_Name: Door Open
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &382583983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382583982}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1649856720}
+  - {fileID: 455140846}
+  m_Father: {fileID: 466309349}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &384283251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,6 +2111,7 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 1
   value: 0
+  playerTag: Player
   box: {fileID: 443949701}
   boxSprite: {fileID: 1776068937}
   audioManager: {fileID: 1595186131}
@@ -2062,6 +2174,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 20, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &455140845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 455140846}
+  - component: {fileID: 455140847}
+  m_Layer: 0
+  m_Name: SpriteDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &455140846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455140845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.22, y: 0.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 382583983}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &455140847
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455140845}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 577258413
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6b0d1d8d874d0944c89cfab5568a4d4d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.4, y: 3.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &456035618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2111,6 +2307,7 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 0
   value: 0
+  playerTag: Player
   circle: {fileID: 456035621}
   audioManager: {fileID: 1595186131}
 --- !u!58 &456035621
@@ -2139,6 +2336,10 @@ GameObject:
   m_Component:
   - component: {fileID: 466309349}
   - component: {fileID: 466309350}
+  - component: {fileID: 466309351}
+  - component: {fileID: 466309354}
+  - component: {fileID: 466309353}
+  - component: {fileID: 466309352}
   m_Layer: 0
   m_Name: Door1 (1)
   m_TagString: Untagged
@@ -2157,7 +2358,8 @@ Transform:
   m_LocalPosition: {x: -18.43, y: 5.786, z: 0}
   m_LocalScale: {x: 0.45, y: 0.45, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 382583983}
   m_Father: {fileID: 528022228}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2213,6 +2415,92 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &466309351
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466309348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.39}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 6.3}
+    newSize: {x: 4, y: 6.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.34, y: 3.93}
+  m_EdgeRadius: 0
+--- !u!114 &466309352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466309348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87e68b3571595ec4cbb4ac2904f27bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 0
+  repeatable: 0
+  value: 0
+  playerTag: Player2
+  box: {fileID: 466309351}
+  boxSprite: {fileID: 382583982}
+  audioManager: {fileID: 1595186131}
+--- !u!114 &466309353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466309348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 0
+  repeatable: 1
+  value: 0
+  playerTag: Player
+  TextBox: {fileID: 829622463}
+  pages:
+  - Darn This door wont budge,,
+  - If Only I was a bit stronger,,
+  emotes: 0000000000000000
+  controller: {fileID: 9100000, guid: 07d2eac286e66e8479d99fa0b9c9270f, type: 2}
+  startSprite: {fileID: 21300000, guid: f776e2e9690501e41a2e5b81ceb440b9, type: 3}
+  audioManager: {fileID: 1595186131}
+  isTalking: 1
+--- !u!58 &466309354
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466309348}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04, y: 2.68}
+  serializedVersion: 2
+  m_Radius: 1.89
 --- !u!1 &473348577
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,6 +2511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 473348578}
   - component: {fileID: 473348579}
+  - component: {fileID: 473348580}
   m_Layer: 0
   m_Name: Door3 (1)
   m_TagString: Untagged
@@ -2297,6 +2586,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &473348580
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473348577}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.56, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4, y: 3.8}
+    newSize: {x: 4, y: 6.3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.55, y: 3.8}
+  m_EdgeRadius: 0
 --- !u!1 &505145179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,6 +2795,7 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 0
   value: 0
+  playerTag: Player
   TextBox: {fileID: 829622463}
   pages:
   - ajskfhaskjf what just happened!!!!
@@ -3238,6 +3554,7 @@ MonoBehaviour:
   forceInteract: 0
   repeatable: 1
   value: 0
+  playerTag: Player
   box: {fileID: 0}
   boxSprite: {fileID: 0}
   audioManager: {fileID: 0}
@@ -3256,6 +3573,7 @@ MonoBehaviour:
   forceInteract: 0
   repeatable: 1
   value: 0
+  playerTag: Player
   TextBox: {fileID: 829622463}
   pages:
   - 'Woah an Artifact! It looks like something from medieval times! '
@@ -3781,6 +4099,7 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 1
   value: 0
+  playerTag: Player
   box: {fileID: 767482841}
   boxSprite: {fileID: 1425600061}
   audioManager: {fileID: 1595186131}
@@ -3915,7 +4234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4883996976931216989, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4883996976931216989, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_SortingOrder
@@ -4039,7 +4358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8194821669456592717, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8194821669456592717, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
       propertyPath: m_SortingLayerID
@@ -7355,6 +7674,7 @@ MonoBehaviour:
   forceInteract: 0
   repeatable: 1
   value: 0
+  playerTag: Player
   TextBox: {fileID: 829622463}
   pages:
   - This is strange,,,,
@@ -7685,6 +8005,7 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 0
   value: 0
+  playerTag: Player
   TextBox: {fileID: 829622463}
   pages:
   - Okay,, maybe entering the time rift was a bad idea
@@ -8635,17 +8956,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1007258500593311551, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007258501926695056, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007258501930681018, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007258501930681018, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
+      propertyPath: m_TagString
+      value: Player2
+      objectReference: {fileID: 0}
     - target: {fileID: 1007258502018691837, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1007258502018691837, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.04
+      value: 24.73
       objectReference: {fileID: 0}
     - target: {fileID: 1007258502018691837, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: 25.04
       objectReference: {fileID: 0}
     - target: {fileID: 1007258502018691837, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8684,8 +9021,16 @@ PrefabInstance:
       value: Character 2
       objectReference: {fileID: 0}
     - target: {fileID: 1007258502018691838, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007258502018691838, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1007258502018691838, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
+      propertyPath: m_TagString
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 968edbb235460aa42aa0d926501d4c36, type: 3}
@@ -8925,6 +9270,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1649856719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1649856720}
+  - component: {fileID: 1649856721}
+  m_Layer: 0
+  m_Name: SpriteDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1649856720
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649856719}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.14, y: 0.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 382583983}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1649856721
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649856719}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 577258413
+  m_SortingLayer: -1
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6b0d1d8d874d0944c89cfab5568a4d4d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.4, y: 3.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1654125643
 GameObject:
   m_ObjectHideFlags: 0
@@ -9350,6 +9779,7 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 0
   value: 0
+  playerTag: Player
   TextBox: {fileID: 829622463}
   pages:
   - Woah!!! Is this some sort of time rift??
@@ -9852,6 +10282,8 @@ GameObject:
   - component: {fileID: 1829063390}
   - component: {fileID: 1829063389}
   - component: {fileID: 1829063391}
+  - component: {fileID: 1829063392}
+  - component: {fileID: 1829063394}
   m_Layer: 0
   m_Name: character changer
   m_TagString: Untagged
@@ -9867,10 +10299,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829063387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.79, y: 11.29, z: 0}
+  m_LocalPosition: {x: 25.3, y: 25.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 181766966}
   m_Father: {fileID: 1821478845}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9957,6 +10390,54 @@ MonoBehaviour:
   forceInteract: 0
   repeatable: 1
   value: 0
+  playerTag: Player
+  originalCharacter: {fileID: 1140725181}
+  newCharacter: {fileID: 1604312457}
+  audioManager: {fileID: 1595186131}
+--- !u!114 &1829063392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829063387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  playerTag: Player
+  TextBox: {fileID: 829622463}
+  pages:
+  - Whoa,, I think I've read about these kinds of runes
+  - these were used in the past to communicate with ancestral spirits
+  - I wonder if any of my ancestors know what to do about this situation
+  - i mean its better than dying in this dungeon at least
+  - worth a shot
+  emotes: 0000000000000000000000000000000000000000
+  controller: {fileID: 9100000, guid: 07d2eac286e66e8479d99fa0b9c9270f, type: 2}
+  startSprite: {fileID: 21300000, guid: f776e2e9690501e41a2e5b81ceb440b9, type: 3}
+  audioManager: {fileID: 1595186131}
+  isTalking: 1
+--- !u!114 &1829063394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829063387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eefc28e92e51144392b238b3c92a6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 0
+  repeatable: 1
+  value: 0
+  playerTag: Player2
   originalCharacter: {fileID: 1140725181}
   newCharacter: {fileID: 1604312457}
   audioManager: {fileID: 1595186131}

@@ -13,6 +13,9 @@ public abstract class Trigger : MonoBehaviour
     //only worry about this if it is not repeatable
     bool hasOccurred;
     public int value;
+
+    public string playerTag = "Player"; //new variable for player tag
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +24,7 @@ public abstract class Trigger : MonoBehaviour
 
     //checks if player is in range of the trigger
     private void OnTriggerStay2D(Collider2D other) {
-        if(other.CompareTag("Player")) {
+        if(other.CompareTag(playerTag)) {
             //Debug.Log("entered");
             isActive = true;
         }
@@ -37,7 +40,7 @@ public abstract class Trigger : MonoBehaviour
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if(other.CompareTag("Player")) {
+        if(other.CompareTag(playerTag)) {
             isActive = false;
             //Debug.Log("exit");
         }
