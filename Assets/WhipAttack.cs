@@ -4,38 +4,37 @@ using UnityEngine;
 
 public class WhipAttack : MonoBehaviour
 {
-	public float damage = 2;
-	Vector2 southAttackOffset;
-	Collider2D whipCollider;
+    public Collider2D whipCollider;
+    public float damage = 3;
+    Vector2 rightAttackOffset;
 
-	private void Start() {
-		whipCollider = GetComponent<Collider2D>();
-		southAttackOffset = transform.position;
-	}
+    private void Start() {
+        rightAttackOffset = transform.position;
+    }
 
-	public void AttackSouth() {
-		print("Attack South");
-		whipCollider.enabled = true;
-		transform.position = southAttackOffset;
-	}
+    public void AttackRight() {
+        whipCollider.enabled = true;
+        transform.localPosition = rightAttackOffset;
+    }
 
-	public void AttackNorth() {
-		whipCollider.enabled = true;
-		transform.position = new Vector3(southAttackOffset.x * -1, southAttackOffset.y);
-	}
+    public void AttackLeft() {
+        whipCollider.enabled = true;
+        transform.localPosition = new Vector3(rightAttackOffset.x * -1, rightAttackOffset.y);
+    }
 
-	public void StopAttack() {
-		whipCollider.enabled = false;
-	}
+    public void StopAttack() {
+        whipCollider.enabled = false;
+    }
 
-	private void OnTriggerEnter2D(Collider2D other) {
-		if(other.tag == "Enemy") {
-			// Deal damage to the enemy
-			Enemy enemy = other.GetComponent<Enemy>();
+    private void OnTriggerEnter2D(Collider2D other) {
+        if(other.tag == "Enemy") {
+            // Deal damage to the enemy
+            Debug.Log("deal damage");
+            Enemy enemy = other.GetComponent<Enemy>();
 
-			if(enemy != null) {
-				enemy.Health -= damage;
-			}
-		}
-	}
+            if(enemy != null) {
+                enemy.Health -= damage;
+            }
+        }
+    }
 }
