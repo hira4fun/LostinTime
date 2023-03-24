@@ -9,7 +9,7 @@ public class closeDoor : Trigger
     public BoxCollider2D box;
     public GameObject boxSprite;
     public AudioManager audioManager;
-    public float audioDelay = 0.5f;
+    public float audioDelay = 0.1f;
 
 
     public override void Action()
