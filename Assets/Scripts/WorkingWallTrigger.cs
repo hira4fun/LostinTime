@@ -9,7 +9,7 @@ public class WorkingWallTrigger : MonoBehaviour
     public BoxCollider2D box;
     private int counter = 0;
     [Range(-50f, 50f)] public float camOffset = 10f;
-    [Range(-15f, 15f)] public float catOffset = 5f;
+    public Vector2 catOffset;
     [Range(5, 180)] public int countOffset = 10;
     private Vector3 moveCam;
     private Vector3 moveCat;
@@ -19,7 +19,7 @@ public class WorkingWallTrigger : MonoBehaviour
     void Start()
     {
         moveCam = new Vector3(0, camOffset, 0);
-        moveCat = new Vector3(0, catOffset, 0);
+        moveCat = new Vector3(catOffset.x, catOffset.y, 0);
         layerMask = LayerMask.GetMask("Player");
     }
 
@@ -36,14 +36,13 @@ public class WorkingWallTrigger : MonoBehaviour
         if (catY < boxY && counter >= countOffset && col.CompareTag("Player"))
         {
             cam.transform.position += moveCam;
-            cat.transform.position += moveCat;
+            cat.transform.position += new Vector3(moveCat.x, moveCat.y, 0);
             counter = 0;
         }
         else if (catY >= boxY && counter > countOffset && col.CompareTag("Player"))
         {
             cam.transform.position -= moveCam;
-            cat.transform.position -= moveCat;
-
+            cat.transform.position -= new Vector3(moveCat.x, moveCat.y, 0);
             counter = 0;
         }
     }
