@@ -26,6 +26,7 @@ public class CaveController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pause = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();

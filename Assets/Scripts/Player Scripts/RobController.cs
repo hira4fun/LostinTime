@@ -11,7 +11,7 @@ public class RobController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public GunAttack gunAttack;
     public GameObject myGameObject;
-
+    public static bool pause = false;
     Vector2 movementInput;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
@@ -23,6 +23,7 @@ public class RobController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pause = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
