@@ -11,7 +11,6 @@ public class ArcController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public WhipAttack whipAttack;
     public GameObject myGameObject;
-
     Vector2 movementInput;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
@@ -87,6 +86,8 @@ public class ArcController : MonoBehaviour
 
     void OnMove(InputValue movementValue) {
         movementInput = movementValue.Get<Vector2>();
+        animator.SetFloat("Xinput", movementInput.x);
+        animator.SetFloat("Yinput", movementInput.y);
     }
 
     void OnFire() {
