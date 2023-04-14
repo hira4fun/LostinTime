@@ -35,7 +35,7 @@ public class MagicAttack : MonoBehaviour
         if(magicCollider.enabled == true) {
             transform.localPosition += Vector3.down * speed * Time.deltaTime;
         } else {
-
+            transform.localPosition = rightAttackOffset;
         }
     }
 

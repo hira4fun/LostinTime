@@ -399,7 +399,11 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 1
   value: 0
+  playerTag: Player
   box: {fileID: 443949701}
+  boxSprite: {fileID: 0}
+  audioManager: {fileID: 0}
+  text: {fileID: 0}
 --- !u!114 &86707060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +419,7 @@ MonoBehaviour:
   forceInteract: 1
   repeatable: 0
   value: 0
+  playerTag: Player
   TextBox: {fileID: 829622463}
   pages:
   - 'Woah an Artifact! It looks like something from medieval times! '
@@ -773,6 +778,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3048859438049508116, guid: be67626704117a149b675e65f3537556, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288325641596677070, guid: be67626704117a149b675e65f3537556, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439668, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_Name
       value: PL_Wiz
@@ -783,11 +796,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439671, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439671, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439671, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1320,7 +1333,7 @@ MonoBehaviour:
   cat: {fileID: 0}
   box: {fileID: 443949701}
   camOffset: 0
-  catOffset: 0
+  catOffset: {x: 0, y: 0}
   countOffset: 10
 --- !u!1 &466309348
 GameObject:
