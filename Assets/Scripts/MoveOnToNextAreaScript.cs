@@ -8,6 +8,7 @@ public class MoveOnToNextAreaScript : Trigger
     public BoxCollider2D box;
     public GameObject boxSprite;
     public AudioManager audioManager;
+    public CircleCollider2D text;
 
 
     public override void Action()
@@ -15,6 +16,7 @@ public class MoveOnToNextAreaScript : Trigger
         audioManager.Play("door");
         box.isTrigger = true;
         boxSprite.SetActive(true);
+        text.enabled = false;
 
         //Debug.Log(isTrigger);
     }
