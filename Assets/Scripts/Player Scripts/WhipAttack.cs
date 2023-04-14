@@ -36,5 +36,6 @@ public class WhipAttack : MonoBehaviour
                 enemy.Health -= damage;
             }
         }
+
     }
 }
