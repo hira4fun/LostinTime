@@ -7,6 +7,7 @@ TagManager:
   - Event
   - Platform
   - AudioManager
+  - Player2
   - Enemy
   layers:
   - Default
@@ -16,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Player
-  - 
+  - Player 2
   - 
   - 
   - 
@@ -53,4 +54,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1296202625
+    locked: 0
+  - name: Player2
+    uniqueID: 160849777
+    locked: 0
+  - name: UI
+    uniqueID: 3229293799
     locked: 0
