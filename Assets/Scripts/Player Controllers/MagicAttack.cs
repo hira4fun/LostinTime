@@ -6,7 +6,7 @@ public class MagicAttack : MonoBehaviour
 {
     public Collider2D magicCollider;
     public float damage = 4;
-    public float speed = 2;
+    public float speed = 100;
     public float x = 0;
     public float y = 0;
     Vector2 rightAttackOffset;

@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 // Takes and handles input and movement for a player character
-public class WizController : MonoBehaviour
+public class RobController : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
-    public MagicAttack magicAttack;
+    public GunAttack gunAttack;
     public GameObject myGameObject;
 
     Vector2 movementInput;
@@ -28,16 +28,30 @@ public class WizController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void toggleMagicBox() {
-        //toggles the magic hitbox
+    private void toggleGunBox() {
+        //toggles the gun hitbox
         myGameObject.SetActive(!myGameObject.activeSelf);
     }
 
     void Update() {
-        //activates magic hitbox for a second, then deactivates it
+        //activates gun hitbox several times rapidfire
         if (Input.GetKeyDown(KeyCode.Space)) {
-            toggleMagicBox();
-            Invoke("toggleMagicBox", 0.7f);
+            Invoke("toggleGunBox", 0.05f);
+            Invoke("toggleGunBox", 0.1f);
+            Invoke("toggleGunBox", 0.15f);
+            Invoke("toggleGunBox", 0.2f);
+            Invoke("toggleGunBox", 0.25f);
+            Invoke("toggleGunBox", 0.3f);
+            Invoke("toggleGunBox", 0.35f);
+            Invoke("toggleGunBox", 0.4f);
+            Invoke("toggleGunBox", 0.45f);
+            Invoke("toggleGunBox", 0.5f);
+            Invoke("toggleGunBox", 0.55f);
+            Invoke("toggleGunBox", 0.6f);
+            Invoke("toggleGunBox", 0.65f);
+            Invoke("toggleGunBox", 0.7f);
+            Invoke("toggleGunBox", 0.75f);
+            Invoke("toggleGunBox", 0.8f);
         }
     }
 
@@ -90,22 +104,22 @@ public class WizController : MonoBehaviour
     }
 
     void OnFire() {
-        animator.SetTrigger("magicAttack");
+        animator.SetTrigger("gunAttack");
     }
 
-    public void MagicAttack() {
+    public void GunAttack() {
         //LockMovement();
 
         if(spriteRenderer.flipX == true){
-            magicAttack.AttackLeft();
+            gunAttack.AttackLeft();
         } else {
-            magicAttack.AttackRight();
+            gunAttack.AttackRight();
         }
     }
 
-    public void EndMagicAttack() {
+    public void EndGunAttack() {
         //UnlockMovement();
-        magicAttack.StopAttack();
+        gunAttack.StopAttack();
         //movementInput = Vector2.zero; // re-enable movement input
     }
 
