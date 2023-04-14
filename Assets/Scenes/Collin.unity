@@ -604,6 +604,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1311385305549638850, guid: f7bf2107e50ac154286245b08602ff2a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439668, guid: f7bf2107e50ac154286245b08602ff2a, type: 3}
       propertyPath: m_Name
       value: PL_Rob
@@ -665,13 +669,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3224720689288012110, guid: be67626704117a149b675e65f3537556, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439668, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_Name
       value: PL_Wiz
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439668, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439671, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_RootOrder
@@ -2759,9 +2767,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3224720689288012110, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439668, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
       propertyPath: m_Name
       value: PL_Arc
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354599150439668, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439671, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
       propertyPath: m_RootOrder
@@ -5743,6 +5759,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1311385305549638850, guid: 8d2ea6625942c644ca86a0090fe7cb6f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439668, guid: 8d2ea6625942c644ca86a0090fe7cb6f, type: 3}
       propertyPath: m_Name
       value: PL_Cave
