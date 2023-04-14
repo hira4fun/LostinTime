@@ -48,14 +48,16 @@ public class Dialogue : MonoBehaviour
         if(isOpen) 
         {
             //pause
-            charMovement.pause = true;
+            CaveController.pause = true;
+            ArcController.pause = true;
+            WizController.pause = true;
             //checks if all of the characters are on the page
             if(cCount >= pages[curPage].Length) 
             {
                 //stops the animation
-                if(animator != null && emotes.Count == pages.Count) {
-                    animator.SetInteger("Animation",emotes[curPage] - 1);
-                }
+                //if(animator != null && emotes.Count == pages.Count) {
+                //    animator.SetInteger("Animation",emotes[curPage] - 1);
+               // }
                 //prints the "next" arrow when at end of page except last page
                 if(curPage < pages.Count - 1) 
                 {
@@ -74,7 +76,9 @@ public class Dialogue : MonoBehaviour
                     {
                         //exits the textbox
                         isOpen = false;
-                        charMovement.pause = false;
+                        ArcController.pause = false;
+                        CaveController.pause = false;
+                        WizController.pause = false;
                         Destroy(textTest);
                         cCount = 0;
                         curPage = 0;
@@ -134,7 +138,7 @@ public class Dialogue : MonoBehaviour
                 }
                 //skip ahead
                 if(Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.DownArrow) ||
-                Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) 
+                Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.Return) || Input.GetKey(KeyCode.Mouse0)) 
                 {
                     cCount = pages[curPage].Length;
                     textbox.text = pages[curPage];
@@ -145,7 +149,9 @@ public class Dialogue : MonoBehaviour
         //unpause
         else 
         {
-            charMovement.pause = false;
+            ArcController.pause = false;
+            CaveController.pause = false;
+            WizController.pause = false;
         }
     }
 }

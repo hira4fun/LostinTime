@@ -11,10 +11,13 @@ public class ArcController : MonoBehaviour
     public ContactFilter2D movementFilter;
     public WhipAttack whipAttack;
     public GameObject myGameObject;
+    public static bool pause = false;
     Vector2 movementInput;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     Animator animator;
+    float xMove;
+    float yMove;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     bool canMove = true;
@@ -22,6 +25,7 @@ public class ArcController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        pause = false;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -42,23 +46,39 @@ public class ArcController : MonoBehaviour
 
     private void FixedUpdate() {
         if(canMove) {
-            // If movement input is not 0, try to move
-            if(movementInput != Vector2.zero){
-                
-                bool success = TryMove(movementInput);
+            if (!pause)
 
-                if(!success) {
-                    success = TryMove(new Vector2(movementInput.x, 0));
-                }
+            {
+                // If movement input is not 0, try to move
+                if (movementInput != Vector2.zero)
+                {
 
-                if(!success) {
-                    success = TryMove(new Vector2(0, movementInput.y));
+                    bool success = TryMove(movementInput);
+
+                    if (!success)
+                    {
+                        success = TryMove(new Vector2(movementInput.x, 0));
+                    }
+
+                    if (!success)
+                    {
+                        success = TryMove(new Vector2(0, movementInput.y));
+                    }
+                    animator.SetFloat("Xinput", xMove);
+                    animator.SetFloat("Yinput", yMove);
+                    animator.SetBool("isMoving", success);
                 }
-                
-                animator.SetBool("isMoving", success);
-            } else {
-                animator.SetBool("isMoving", false);
+                else
+                {
+                    animator.SetBool("isMoving", false);
+                }
             }
+            if (pause)
+            {
+                rb.velocity = Vector2.zero;
+
+            }
+            
         }
     }
 
@@ -86,8 +106,9 @@ public class ArcController : MonoBehaviour
 
     void OnMove(InputValue movementValue) {
         movementInput = movementValue.Get<Vector2>();
-        animator.SetFloat("Xinput", movementInput.x);
-        animator.SetFloat("Yinput", movementInput.y);
+        xMove = movementInput.x;
+        yMove = movementInput.y;
+
     }
 
     void OnFire() {
