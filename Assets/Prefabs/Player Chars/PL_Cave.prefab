@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1981877843602093126}
   - component: {fileID: 4338954883765945305}
   - component: {fileID: 1311385305549638850}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: ClubHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 5133354598159966665}
   - component: {fileID: 5133354598159966518}
   - component: {fileID: 5133354598159966516}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -226,9 +226,9 @@ GameObject:
   - component: {fileID: 3106808842010560561}
   - component: {fileID: 1544163801380417525}
   - component: {fileID: 2714398989954053145}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: CharController
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -367,7 +367,7 @@ Animator:
   m_GameObject: {fileID: 5133354598961527984}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 66016ed215677c14db4e7f74771f3b17, type: 2}
+  m_Controller: {fileID: 9100000, guid: 812fe5a18c02cf24fa48f4d93164f45f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -452,9 +452,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5133354599150439671}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: PL_Cave
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
