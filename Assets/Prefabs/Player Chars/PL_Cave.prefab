@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3288325641596677070}
   - component: {fileID: 1981877843602093126}
-  - component: {fileID: 5653044390399744279}
-  - component: {fileID: 3224720689288012110}
+  - component: {fileID: 4338954883765945305}
+  - component: {fileID: 1311385305549638850}
   m_Layer: 6
-  m_Name: WhipHitbox
+  m_Name: ClubHitbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3048859438049508116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.6999998, z: 0}
-  m_LocalScale: {x: 5, y: 3, z: 1}
+  m_LocalPosition: {x: 0, y: -1.9499998, z: 0}
+  m_LocalScale: {x: 2.5531251, y: 2.4196875, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5133354598961527987}
@@ -60,7 +60,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &5653044390399744279
+--- !u!114 &4338954883765945305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,12 +69,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3048859438049508116}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93de4b4c694727143940e89fa077d930, type: 3}
+  m_Script: {fileID: 11500000, guid: 7767bef2d6d824e4e860ab180198d2de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whipCollider: {fileID: 0}
-  damage: 2
---- !u!212 &3224720689288012110
+  clubCollider: {fileID: 0}
+  damage: 4
+--- !u!212 &1311385305549638850
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,9 +222,10 @@ GameObject:
   - component: {fileID: 5133354598961527989}
   - component: {fileID: 5133354598961527988}
   - component: {fileID: 5389537710545019284}
-  - component: {fileID: 5308319661570468084}
+  - component: {fileID: 6197567820674418652}
   - component: {fileID: 3106808842010560561}
   - component: {fileID: 1544163801380417525}
+  - component: {fileID: 2714398989954053145}
   m_Layer: 6
   m_Name: CharController
   m_TagString: Player
@@ -287,7 +288,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.92, y: 1.92}
+    oldSize: {x: 1.9200001, y: 1.9207032}
     newSize: {x: 1.92, y: 1.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -326,7 +327,7 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &5308319661570468084
+--- !u!114 &6197567820674418652
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -335,7 +336,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5133354598961527984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d54ce0602f863c4c8418aa898c01b42, type: 3}
+  m_Script: {fileID: 11500000, guid: 18f38f591d2efe647b7d9be53734fa3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
@@ -354,7 +355,7 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  whipAttack: {fileID: 5653044390399744279}
+  clubAttack: {fileID: 4338954883765945305}
   myGameObject: {fileID: 3048859438049508116}
 --- !u!95 &3106808842010560561
 Animator:
@@ -366,7 +367,7 @@ Animator:
   m_GameObject: {fileID: 5133354598961527984}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0ddeb95f7d63fda439703031d58e1aa5, type: 2}
+  m_Controller: {fileID: 9100000, guid: 66016ed215677c14db4e7f74771f3b17, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -417,7 +418,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1095835564, guid: 78cbd7b58f61f9f47a2f153f3c10ec7d, type: 3}
+  m_Sprite: {fileID: -489479338, guid: a17fb83bc4dc5b64a9f7e2245d424256, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -428,6 +429,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2714398989954053145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5133354598961527984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7767bef2d6d824e4e860ab180198d2de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clubCollider: {fileID: 1981877843602093126}
+  damage: 4
 --- !u!1 &5133354599150439668
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +453,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5133354599150439671}
   m_Layer: 6
-  m_Name: PL_Arc
+  m_Name: PL_Cave
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

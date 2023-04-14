@@ -4,12 +4,12 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 // Takes and handles input and movement for a player character
-public class PlayerController : MonoBehaviour
+public class WizController : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
-    public WhipAttack whipAttack;
+    public MagicAttack magicAttack;
     public GameObject myGameObject;
 
     Vector2 movementInput;
@@ -28,16 +28,16 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    private void toggleWhipBox() {
-        //toggles the whip hitbox
+    private void toggleMagicBox() {
+        //toggles the magic hitbox
         myGameObject.SetActive(!myGameObject.activeSelf);
     }
 
     void Update() {
-        //activates whip hitbox for half a second, then deactivates it
+        //activates magic hitbox for a second, then deactivates it
         if (Input.GetKeyDown(KeyCode.Space)) {
-            toggleWhipBox();
-            Invoke("toggleWhipBox", 0.5f);
+            toggleMagicBox();
+            Invoke("toggleMagicBox", 1f);
         }
     }
 
@@ -90,25 +90,26 @@ public class PlayerController : MonoBehaviour
     }
 
     void OnFire() {
-        animator.SetTrigger("whipAttack");
+        animator.SetTrigger("magicAttack");
     }
 
-    public void WhipAttack() {
-        LockMovement();
+    public void MagicAttack() {
+        //LockMovement();
 
         if(spriteRenderer.flipX == true){
-            whipAttack.AttackLeft();
+            magicAttack.AttackLeft();
         } else {
-            whipAttack.AttackRight();
+            magicAttack.AttackRight();
         }
     }
 
-    public void EndWhipAttack() {
-        UnlockMovement();
-        whipAttack.StopAttack();
-        movementInput = Vector2.zero; // re-enable movement input
+    public void EndMagicAttack() {
+        //UnlockMovement();
+        magicAttack.StopAttack();
+        //movementInput = Vector2.zero; // re-enable movement input
     }
 
+    /*
     public void LockMovement() {
         canMove = false;
         movementInput = Vector2.zero; // disable movement input
@@ -117,4 +118,5 @@ public class PlayerController : MonoBehaviour
     public void UnlockMovement() {
         canMove = true;
     }
+    */
 }
