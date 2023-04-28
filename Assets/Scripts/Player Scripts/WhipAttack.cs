@@ -6,20 +6,20 @@ public class WhipAttack : MonoBehaviour
 {
     public Collider2D whipCollider;
     public float damage = 3;
-    Vector2 rightAttackOffset;
+    Vector2 southAttackOffset;
 
     private void Start() {
-        rightAttackOffset = transform.position;
+        southAttackOffset = transform.position;
     }
 
-    public void AttackRight() {
+    public void AttackSouth() {
         whipCollider.enabled = true;
-        transform.localPosition = rightAttackOffset;
+        transform.localPosition = southAttackOffset;
     }
 
-    public void AttackLeft() {
+    public void AttackNorth() {
         whipCollider.enabled = true;
-        transform.localPosition = new Vector3(rightAttackOffset.x * -1, rightAttackOffset.y);
+        transform.localPosition = new Vector3(southAttackOffset.x, southAttackOffset.y * -1);
     }
 
     public void StopAttack() {
@@ -29,7 +29,6 @@ public class WhipAttack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Enemy") {
             // Deal damage to the enemy
-            Debug.Log("deal damage");
             Enemy enemy = other.GetComponent<Enemy>();
 
             if(enemy != null) {

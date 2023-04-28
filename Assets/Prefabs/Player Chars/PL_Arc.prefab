@@ -356,6 +356,7 @@ MonoBehaviour:
     maxNormalAngle: 0
   whipAttack: {fileID: 5653044390399744279}
   myGameObject: {fileID: 3048859438049508116}
+  faceDir: 2
 --- !u!95 &3106808842010560561
 Animator:
   serializedVersion: 5

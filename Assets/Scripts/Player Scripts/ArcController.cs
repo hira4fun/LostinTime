@@ -18,9 +18,19 @@ public class ArcController : MonoBehaviour
     Animator animator;
     float xMove;
     float yMove;
+    public float health = 4;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     bool canMove = true;
+
+    public float faceDir = 2;
+    /*
+    1 = North
+    2 = South
+    3 = East
+    4 = West
+    */
+
 
     // Start is called before the first frame update
     void Start()
@@ -78,7 +88,34 @@ public class ArcController : MonoBehaviour
                 rb.velocity = Vector2.zero;
 
             }
-            
+            // Sets facing direction to north
+            if(movementInput.y > 0) {
+                faceDir = 1;
+                if(faceDir == 1){
+                    Debug.Log("facing north");
+                }
+            }
+            // Sets facing direction to south
+            if(movementInput.y < 0) {
+                faceDir = 2;
+                if(faceDir == 2){
+                    Debug.Log("facing south");
+                }
+            }
+            // Sets facing direction to east
+            if(movementInput.x > 0) {
+                faceDir = 3;
+                if(faceDir == 3){
+                    Debug.Log("facing east");
+                }
+            }
+            // Sets facing direction to west
+            if(movementInput.x < 0) {
+                faceDir = 4;
+                if(faceDir == 4){
+                    Debug.Log("facing west");
+                }
+            }
         }
     }
 
@@ -117,12 +154,6 @@ public class ArcController : MonoBehaviour
 
     public void WhipAttack() {
         //LockMovement();
-
-        if(spriteRenderer.flipX == true){
-            whipAttack.AttackLeft();
-        } else {
-            whipAttack.AttackRight();
-        }
     }
 
     public void EndWhipAttack() {
