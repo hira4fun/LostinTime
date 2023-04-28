@@ -55,11 +55,12 @@ public class Dialogue : MonoBehaviour
             if(cCount >= pages[curPage].Length) 
             {
                 //stops the animation
-                //if(animator != null && emotes.Count == pages.Count) {
-                //    animator.SetInteger("Animation",emotes[curPage] - 1);
-               // }
-                //prints the "next" arrow when at end of page except last page
-                if(curPage < pages.Count - 1) 
+                if(animator != null) {
+                    animator.SetInteger("Animation",emotes[curPage] - 1);
+                    Debug.Log("animation");
+                }
+                // prints the "next" arrow when at end of page except last page
+                if (curPage < pages.Count - 1) 
                 {
                     arrow.text = ">";
                 }
@@ -95,8 +96,9 @@ public class Dialogue : MonoBehaviour
             else
             {
                 //starts the animation
-                if(animator != null && emotes.Count == pages.Count) {
+                if(animator != null) {
                     animator.SetInteger("Animation",emotes[curPage]);
+                    Debug.Log("animation");
                 }
                 //writes chars at specified pace
                 elapsed += Time.deltaTime;
@@ -126,12 +128,12 @@ public class Dialogue : MonoBehaviour
                             if (RNGSound == 0)
                             {
                                 audioManager.Play("blip");
-                                Debug.Log("blip");
+                                
                             }
                             else
                             {
                                 audioManager.Play("blop");
-                                Debug.Log("blop");
+                               
                             }
                         }
                     }

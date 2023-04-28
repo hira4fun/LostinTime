@@ -6,7 +6,8 @@ public class TextTriggerCave : Trigger
 {
     public GameObject TextBox;
     // public GameObject HeadBox;
-    public List<string> pages;
+    public List<string> unreadPages; // List of unread pages
+    public List<string> readPages; // List of read pages
     public List<int> emotes;
     public RuntimeAnimatorController controller;
     public Sprite startSprite;
@@ -20,19 +21,36 @@ public class TextTriggerCave : Trigger
         playerTag = "Player2";
 
     }
-    void Instant()
+    void InstantiateDialogue()
     {
         instance = Instantiate(TextBox, TextBox.transform.position, Quaternion.identity);
         instance.SetActive(true);
-        instance.GetComponent<Dialogue>().pages = pages;
-        instance.GetComponent<Dialogue>().emotes = emotes;
-        instance.GetComponent<Dialogue>().controller = controller;
-        instance.GetComponent<Dialogue>().audioManager = audioManager;
-        instance.GetComponent<Dialogue>().isOpen = true;
-        instance.GetComponent<Dialogue>().isTalking = isTalking;
+        Dialogue dialogue = instance.GetComponent<Dialogue>();
+
+        List<string> pagesToUse; // List of pages to use in the dialogue
+
+        if (unreadPages.Count > 0)
+        {
+            // If there are unread pages, create a copy of unreadPages list to use
+            pagesToUse = new List<string>(unreadPages);
+            unreadPages.Clear(); // Clear the unread pages list
+        }
+        else
+        {
+            // Otherwise, use the read pages
+            pagesToUse = readPages;
+        }
+
+        dialogue.pages = pagesToUse;
+        dialogue.emotes = emotes;
+        dialogue.controller = controller;
+        dialogue.audioManager = audioManager;
+        dialogue.isOpen = true;
+        dialogue.isTalking = isTalking;
     }
+
     public override void Action()
     {
-        Instant();
+        InstantiateDialogue();
     }
 }
