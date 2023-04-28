@@ -233,9 +233,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2551661ce7cb8444c8a4a6d5572b118d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tagTarget: Player
   slimeDetection: {fileID: 8359087822614691571}
   moveSpeed: 1000
-  col: {fileID: 0}
+  col: {fileID: 6684884912268001686}
 --- !u!114 &3962608408883175601
 MonoBehaviour:
   m_ObjectHideFlags: 0

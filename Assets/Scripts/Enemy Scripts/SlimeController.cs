@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class SlimeController : MonoBehaviour
 {
+
+    public string tagTarget = "Player";
+    
     public SlimeDetection slimeDetection;
 
     public float moveSpeed = 1000f;
 
     Rigidbody2D rb;
-
-    public Collider2D col;
 
     void FixedUpdate(){
         if(slimeDetection.detectedObjs.Count > 0){
@@ -22,9 +23,9 @@ public class SlimeController : MonoBehaviour
         }
     }
 
-    void OnColliderEnter2D(Collider2D col){
-        if(collider.gameObject.tag == "Player"){      
-            Debug.Log("Colliding with player");
+    void OnCollisionEnter2D(Collision2D other){
+        if(other.collider.tag == "Player"){
+            Destroy(other.gameObject);
         }
     }
 }
