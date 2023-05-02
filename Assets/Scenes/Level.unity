@@ -3450,6 +3450,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.7019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.25490198
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.38431373
+      objectReference: {fileID: 0}
     - target: {fileID: 5133354598961527988, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
       propertyPath: m_Size.x
       value: 0.87
@@ -5750,6 +5762,18 @@ PrefabInstance:
     - target: {fileID: 5133354598159966517, guid: 8d2ea6625942c644ca86a0090fe7cb6f, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: 8d2ea6625942c644ca86a0090fe7cb6f, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: 8d2ea6625942c644ca86a0090fe7cb6f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.105882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: 8d2ea6625942c644ca86a0090fe7cb6f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.07058824
       objectReference: {fileID: 0}
     - target: {fileID: 5133354598961527984, guid: 8d2ea6625942c644ca86a0090fe7cb6f, type: 3}
       propertyPath: m_Layer
@@ -12198,6 +12222,18 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: be67626704117a149b675e65f3537556, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: be67626704117a149b675e65f3537556, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0.105882354
+      objectReference: {fileID: 0}
+    - target: {fileID: 5133354598159966518, guid: be67626704117a149b675e65f3537556, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0.07058824
+      objectReference: {fileID: 0}
     - target: {fileID: 5133354598961527984, guid: be67626704117a149b675e65f3537556, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -17336,7 +17372,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1288961585
   m_SortingLayer: -2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 57f46681947874e40bd48d192385b752, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
