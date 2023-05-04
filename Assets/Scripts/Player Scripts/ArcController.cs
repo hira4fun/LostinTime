@@ -19,7 +19,7 @@ public class ArcController : MonoBehaviour
     Animator animator;
     float xMove;
     float yMove;
-    public float health = 4;
+    public static float health = 4;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     bool canMove = true;
@@ -168,7 +168,11 @@ public class ArcController : MonoBehaviour
     public float Health {
         set {
             health = value;
-
+            GameObject healthDisplay = GameObject.Find("HealthDisplay");
+            if (healthDisplay != null)
+            {
+                healthDisplay.GetComponent<HealthDisplay>().SetLastChangedScript("ArcController");
+            }
             if (health <= 0) {
                 Defeated();
             }
