@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 // Takes and handles input and movement for a player character
 public class ArcController : MonoBehaviour
 {
+    public static ArcController instance;
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
@@ -31,6 +32,9 @@ public class ArcController : MonoBehaviour
     4 = West
     */
 
+    private void Awake(){
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +53,7 @@ public class ArcController : MonoBehaviour
     void Update() {
         //activates whip hitbox for half a second, then deactivates it
         if (Input.GetKeyDown(KeyCode.Space)) {
+            whipAttack.Attack();
             toggleWhipBox();
             Invoke("toggleWhipBox", 0.5f);
         }
@@ -145,17 +150,16 @@ public class ArcController : MonoBehaviour
         movementInput = movementValue.Get<Vector2>();
         xMove = movementInput.x;
         yMove = movementInput.y;
-
     }
 
     void OnFire() {
         animator.SetTrigger("whipAttack");
     }
-
+   
     public void WhipAttack() {
         //LockMovement();
     }
-
+    
     public void EndWhipAttack() {
         //UnlockMovement();
         whipAttack.StopAttack();
@@ -172,4 +176,25 @@ public class ArcController : MonoBehaviour
         canMove = true;
     }
     */
+
+    public float Health {
+        set {
+            health = value;
+
+            if (health <= 0) {
+                Defeated();
+            }
+        }
+        get {
+            return health;
+        }
+    }
+
+    public void Defeated() {
+        RemovePlayer();
+    }
+
+    private void RemovePlayer() {
+        Destroy(gameObject);
+    }
 }

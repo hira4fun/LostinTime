@@ -5,11 +5,9 @@ using UnityEngine;
 public class MagicAttack : MonoBehaviour
 {
     public Collider2D magicCollider;
-    public float damage = 4;
-    public float speed = 100;
-    public float x = 0;
-    public float y = 0;
-    Vector2 rightAttackOffset;
+    public float damage = 3;
+    public float speed = 120;
+    Vector3 defaultPos = new Vector3(0, 0, 0);
 
     /*
     Vector3.forward    (0,  0,  1)
@@ -27,40 +25,36 @@ public class MagicAttack : MonoBehaviour
     -transform.right    object left
     */
 
-    private void Start() {
-        rightAttackOffset = transform.position;
-    }
-
     public void Update() {
         if(magicCollider.enabled == true) {
-            transform.localPosition += Vector3.down * speed * Time.deltaTime;
-        } else {
-            transform.localPosition = rightAttackOffset;
+            transform.position += Vector3.down * speed * Time.deltaTime;
+        }
+        if(magicCollider.enabled == false){
+            transform.position = defaultPos;
         }
     }
 
-    public void AttackRight() {
+    public void Attack() {
         magicCollider.enabled = true;
-        transform.localPosition = rightAttackOffset;
-    }
-
-    public void AttackLeft() {
-        magicCollider.enabled = true;
-        transform.localPosition = new Vector3(rightAttackOffset.x * -1, rightAttackOffset.y);
     }
 
     public void StopAttack() {
         magicCollider.enabled = false;
+        transform.position = defaultPos;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Enemy") {
             // Deal damage to the enemy
-            Debug.Log("deal damage");
             Enemy enemy = other.GetComponent<Enemy>();
+            EnemySlime enemySlime = other.GetComponent<EnemySlime>();
 
             if(enemy != null) {
                 enemy.Health -= damage;
+            }
+            if(enemySlime != null) {
+                enemySlime.Health -= damage;
+                Debug.Log("damage to slime");
             }
         }
     }
