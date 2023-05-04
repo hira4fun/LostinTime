@@ -5,6 +5,8 @@ using UnityEngine;
 public class SlimeDetection : MonoBehaviour
 {
     public string tagTarget = "Player";
+    public string tagTarget2 = "Player2";
+    public string tagTarget3 = "Player3";
 
     public List<Collider2D> detectedObjs = new List<Collider2D>();
 
@@ -23,13 +25,13 @@ public class SlimeDetection : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collider){
-        if(collider.gameObject.tag == tagTarget){      
+        if(collider.gameObject.tag == tagTarget || collider.gameObject.tag == tagTarget2 || collider.gameObject.tag == tagTarget3){      
             detectedObjs.Add(collider);
         }
     }
 
     void OnTriggerExit2D(Collider2D collider){
-        if(collider.gameObject.tag == tagTarget){      
+        if(collider.gameObject.tag == tagTarget || collider.gameObject.tag == tagTarget2 || collider.gameObject.tag == tagTarget3){      
             detectedObjs.Remove(collider);
         }
     }

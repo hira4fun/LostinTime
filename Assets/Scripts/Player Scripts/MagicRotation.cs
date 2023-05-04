@@ -21,22 +21,18 @@ public class MagicRotation : MonoBehaviour
 
         if(wizController.faceDir == 1){
             mRotation = new Vector3(0, 0, 180);
-            Debug.Log("hitbox facing north");
         }
 
         if(wizController.faceDir == 2){
             mRotation = new Vector3(0, 0, 0);
-            Debug.Log("hitbox facing south");
         }
 
         if(wizController.faceDir == 3){
             mRotation = new Vector3(0, 0, 90);
-            Debug.Log("hitbox facing east");
         }
 
         if(wizController.faceDir == 4){
             mRotation = new Vector3(0, 0, 270);
-            Debug.Log("hitbox facing west");
         }
 
         transform.rotation = Quaternion.Euler(mRotation);

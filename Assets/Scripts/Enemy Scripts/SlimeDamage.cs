@@ -8,7 +8,7 @@ public class SlimeDamage : MonoBehaviour
     public float damage = 1;
 
     void OnTriggerEnter2D(Collider2D other){
-        if(other.gameObject.tag == "Player"){
+        if(other.gameObject.tag == "Player" || other.gameObject.tag == "Player2" || other.gameObject.tag == "Player3"){
             // Damages architect
             ArcController arcController = other.GetComponent<ArcController>();
             if(arcController != null) {
@@ -18,6 +18,11 @@ public class SlimeDamage : MonoBehaviour
             CaveController caveController = other.GetComponent<CaveController>();
             if(caveController != null) {
                 caveController.Health -= damage;
+            }
+            // Damages wizard
+            WizController wizController = other.GetComponent<WizController>();
+            if(wizController != null) {
+                wizController.Health -= damage;
             }
         }
     }
