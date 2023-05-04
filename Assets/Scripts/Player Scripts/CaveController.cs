@@ -96,30 +96,18 @@ public class CaveController : MonoBehaviour
             // Sets facing direction to north
             if(movementInput.y > 0) {
                 faceDir = 1;
-                if(faceDir == 1){
-                    Debug.Log("facing north");
-                }
             }
             // Sets facing direction to south
             if(movementInput.y < 0) {
                 faceDir = 2;
-                if(faceDir == 2){
-                    Debug.Log("facing south");
-                }
             }
             // Sets facing direction to east
             if(movementInput.x > 0) {
                 faceDir = 3;
-                if(faceDir == 3){
-                    Debug.Log("facing east");
-                }
             }
             // Sets facing direction to west
             if(movementInput.x < 0) {
                 faceDir = 4;
-                if(faceDir == 4){
-                    Debug.Log("facing west");
-                }
             }
         }
     }
