@@ -1,5 +1,77 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3198587665385606378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882090384252674400}
+  - component: {fileID: 1938394974675038803}
+  - component: {fileID: 7473147142175680755}
+  m_Layer: 9
+  m_Name: Hitbox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882090384252674400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198587665385606378}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.204, z: 0}
+  m_LocalScale: {x: 0.990668, y: 0.5775, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1472932606366187523}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1938394974675038803
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198587665385606378}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &7473147142175680755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198587665385606378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d65ea0dc98b6043a1c74864a0f47ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!1 &3934457150306875199
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,7 +120,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.24}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 5
 --- !u!114 &8359087822614691571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,6 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: Player
+  tagTarget2: Player2
+  tagTarget3: Player3
   detectedObjs: []
   col: {fileID: 540465850805380707}
 --- !u!1 &6756582486122045426
@@ -77,8 +151,7 @@ GameObject:
   - component: {fileID: 4992319659042011795}
   - component: {fileID: 6684884912268001686}
   - component: {fileID: 3502580520611002749}
-  - component: {fileID: 4899523664997523755}
-  - component: {fileID: 3962608408883175601}
+  - component: {fileID: 5273643941798858341}
   m_Layer: 9
   m_Name: bSlime
   m_TagString: Enemy
@@ -99,6 +172,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 13007618386927639}
+  - {fileID: 882090384252674400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -185,7 +259,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.207932}
@@ -221,7 +295,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &4899523664997523755
+--- !u!114 &5273643941798858341
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -230,23 +304,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6756582486122045426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2551661ce7cb8444c8a4a6d5572b118d, type: 3}
+  m_Script: {fileID: 11500000, guid: cd0d3ff4bd34ce54fa53772bb4325d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagTarget: Player
   slimeDetection: {fileID: 8359087822614691571}
-  moveSpeed: 1000
-  col: {fileID: 6684884912268001686}
---- !u!114 &3962608408883175601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6756582486122045426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ffcab0b202bc3f48a0cb117a09bb485, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  moveSpeed: 300
+  knockbackForce: 300
   health: 3

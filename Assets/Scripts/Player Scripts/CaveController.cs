@@ -6,22 +6,35 @@ using UnityEngine.InputSystem;
 // Takes and handles input and movement for a player character
 public class CaveController : MonoBehaviour
 {
+    public static CaveController instance;
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
     public ClubAttack clubAttack;
     public GameObject myGameObject;
     public static bool pause = false;
-
     Vector2 movementInput;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     Animator animator;
     float xMove;
     float yMove;
+    public float health = 5;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     bool canMove = true;
+
+    public float faceDir = 2;
+    /*
+    1 = North
+    2 = South
+    3 = East
+    4 = West
+    */
+
+    private void Awake(){
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -40,15 +53,14 @@ public class CaveController : MonoBehaviour
     void Update() {
         //activates club hitbox for half a second, then deactivates it
         if (Input.GetKeyDown(KeyCode.Space)) {
+            clubAttack.Attack();
             Invoke("toggleClubBox", 0.4f);
             Invoke("toggleClubBox", 0.6f);
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (canMove)
-        {
+    private void FixedUpdate(){
+        if (canMove){
             if (!pause)
 
             {
@@ -81,7 +93,22 @@ public class CaveController : MonoBehaviour
                 rb.velocity = Vector2.zero;
 
             }
-
+            // Sets facing direction to north
+            if(movementInput.y > 0) {
+                faceDir = 1;
+            }
+            // Sets facing direction to south
+            if(movementInput.y < 0) {
+                faceDir = 2;
+            }
+            // Sets facing direction to east
+            if(movementInput.x > 0) {
+                faceDir = 3;
+            }
+            // Sets facing direction to west
+            if(movementInput.x < 0) {
+                faceDir = 4;
+            }
         }
     }
 
@@ -119,12 +146,6 @@ public class CaveController : MonoBehaviour
 
     public void ClubAttack() {
         //LockMovement();
-
-        if(spriteRenderer.flipX == true){
-            clubAttack.AttackLeft();
-        } else {
-            clubAttack.AttackRight();
-        }
     }
 
     public void EndClubAttack() {
@@ -143,4 +164,25 @@ public class CaveController : MonoBehaviour
         canMove = true;
     }
     */
+
+    public float Health {
+        set {
+            health = value;
+
+            if (health <= 0) {
+                Defeated();
+            }
+        }
+        get {
+            return health;
+        }
+    }
+
+    public void Defeated() {
+        RemovePlayer();
+    }
+
+    private void RemovePlayer() {
+        Destroy(gameObject);
+    }
 }

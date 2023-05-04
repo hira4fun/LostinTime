@@ -6,23 +6,35 @@ using UnityEngine.InputSystem;
 // Takes and handles input and movement for a player character
 public class WizController : MonoBehaviour
 {
+    public static WizController instance;
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
     public ContactFilter2D movementFilter;
     public MagicAttack magicAttack;
     public GameObject myGameObject;
     public static bool pause = false;
-
-
     Vector2 movementInput;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rb;
     Animator animator;
     float xMove;
     float yMove;
+    public float health = 3;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     bool canMove = true;
+
+    public float faceDir = 2;
+    /*
+    1 = North
+    2 = South
+    3 = East
+    4 = West
+    */
+
+    private void Awake(){
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -41,15 +53,14 @@ public class WizController : MonoBehaviour
     void Update() {
         //activates magic hitbox for a second, then deactivates it
         if (Input.GetKeyDown(KeyCode.Space)) {
+            magicAttack.Attack();
             toggleMagicBox();
             Invoke("toggleMagicBox", 0.7f);
         }
     }
 
-    private void FixedUpdate()
-    {
-        if (canMove)
-        {
+    private void FixedUpdate(){
+        if (canMove){
             if (!pause)
 
             {
@@ -82,7 +93,22 @@ public class WizController : MonoBehaviour
                 rb.velocity = Vector2.zero;
 
             }
-
+            // Sets facing direction to north
+            if(movementInput.y > 0) {
+                faceDir = 1;
+            }
+            // Sets facing direction to south
+            if(movementInput.y < 0) {
+                faceDir = 2;
+            }
+            // Sets facing direction to east
+            if(movementInput.x > 0) {
+                faceDir = 3;
+            }
+            // Sets facing direction to west
+            if(movementInput.x < 0) {
+                faceDir = 4;
+            }
         }
     }
 
@@ -120,12 +146,6 @@ public class WizController : MonoBehaviour
 
     public void MagicAttack() {
         //LockMovement();
-
-        if(spriteRenderer.flipX == true){
-            magicAttack.AttackLeft();
-        } else {
-            magicAttack.AttackRight();
-        }
     }
 
     public void EndMagicAttack() {
@@ -144,4 +164,25 @@ public class WizController : MonoBehaviour
         canMove = true;
     }
     */
+
+    public float Health {
+        set {
+            health = value;
+
+            if (health <= 0) {
+                Defeated();
+            }
+        }
+        get {
+            return health;
+        }
+    }
+
+    public void Defeated() {
+        RemovePlayer();
+    }
+
+    private void RemovePlayer() {
+        Destroy(gameObject);
+    }
 }
