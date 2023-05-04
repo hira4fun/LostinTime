@@ -120,7 +120,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.24}
   serializedVersion: 2
-  m_Radius: 4
+  m_Radius: 5
 --- !u!114 &8359087822614691571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +134,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tagTarget: Player
+  tagTarget2: Player2
+  tagTarget3: Player3
   detectedObjs: []
   col: {fileID: 540465850805380707}
 --- !u!1 &6756582486122045426
@@ -306,6 +308,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slimeDetection: {fileID: 8359087822614691571}
-  moveSpeed: 500
+  moveSpeed: 300
   knockbackForce: 300
   health: 3
