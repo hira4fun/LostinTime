@@ -19,7 +19,7 @@ public class WizController : MonoBehaviour
     Animator animator;
     float xMove;
     float yMove;
-    public float health = 3;
+    public static float health = 3;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
 
     bool canMove = true;
@@ -168,7 +168,11 @@ public class WizController : MonoBehaviour
     public float Health {
         set {
             health = value;
-
+            GameObject healthDisplay = GameObject.Find("HealthDisplay");
+            if (healthDisplay != null)
+            {
+                healthDisplay.GetComponent<HealthDisplay>().SetLastChangedScript("WizController");
+            }
             if (health <= 0) {
                 Defeated();
             }
