@@ -547,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -10633,7 +10633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -19993,7 +19993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
