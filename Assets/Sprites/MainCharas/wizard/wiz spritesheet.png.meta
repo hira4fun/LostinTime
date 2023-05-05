@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8861a4c79322af7458504940b3554730
+guid: 5293f7bb3eed98b459138943baeea04c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,11 +105,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: arch spritesheet_0
+      name: wiz spritesheet_0
       rect:
         serializedVersion: 2
         x: 1
-        y: 83
+        y: 85
         width: 26
         height: 28
       alignment: 0
@@ -119,18 +119,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc941fe7d602c5f489150694e85eef60
-      internalID: 2109725362
+      spriteID: cb7c20590db2d914d8ad4057e99be266
+      internalID: 1012043187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arch spritesheet_1
+      name: wiz spritesheet_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 83
+        x: 27
+        y: 85
         width: 26
         height: 28
       alignment: 0
@@ -140,18 +140,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f243fbdffc557945bb75a7e289a620c
-      internalID: 2063200474
+      spriteID: 7fcdf6038e636e54eae21c720cc13782
+      internalID: 1048382933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arch spritesheet_2
+      name: wiz spritesheet_2
       rect:
         serializedVersion: 2
         x: 1
-        y: 56
+        y: 57
         width: 26
         height: 28
       alignment: 0
@@ -161,18 +161,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ddab70b64b87eb42afb0ee4f5952079
-      internalID: -2067360149
+      spriteID: 11629de0f1c35914e8e3b5617900158a
+      internalID: -1733825453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arch spritesheet_3
+      name: wiz spritesheet_3
       rect:
         serializedVersion: 2
-        x: 26
-        y: 56
+        x: 27
+        y: 57
         width: 26
         height: 28
       alignment: 0
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54abdf512ba6be546a327db9b19058ca
-      internalID: 1800322022
+      spriteID: 45f9ce07aa77e2a48b90e366dc9f5ffe
+      internalID: -287244773
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arch spritesheet_4
+      name: wiz spritesheet_4
       rect:
         serializedVersion: 2
         x: 1
@@ -203,17 +203,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f0e06cd25160974e9f34cfca607ffe4
-      internalID: 420611513
+      spriteID: 3398865a0d8aa804cadd64afcf6aadc8
+      internalID: 779352247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arch spritesheet_5
+      name: wiz spritesheet_5
       rect:
         serializedVersion: 2
-        x: 26
+        x: 27
         y: 29
         width: 26
         height: 28
@@ -224,18 +224,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13ebe305e710c604589133a15ef105da
-      internalID: -225809697
+      spriteID: 9f087ca3df5a3454a8b5644bd3040fa6
+      internalID: 2087115511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arch spritesheet_6
+      name: wiz spritesheet_6
       rect:
         serializedVersion: 2
         x: 1
-        y: 2
+        y: 1
         width: 26
         height: 28
       alignment: 0
@@ -245,18 +245,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b80957f20d1dff04696d735db5e57a43
-      internalID: 1394315994
+      spriteID: c3afa9afb2d99304d9ad1ffe32a7c65e
+      internalID: 1179241101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: arch spritesheet_7
+      name: wiz spritesheet_7
       rect:
         serializedVersion: 2
-        x: 26
-        y: 2
+        x: 27
+        y: 1
         width: 26
         height: 28
       alignment: 0
@@ -266,8 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51019bde736dc14bb575e6499061ab2
-      internalID: -1212145337
+      spriteID: 5424f191dd713d04980f2bccd614c923
+      internalID: -835320948
       vertices: []
       indices: 
       edges: []
@@ -283,14 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      arch spritesheet_0: 2109725362
-      arch spritesheet_1: 2063200474
-      arch spritesheet_2: -2067360149
-      arch spritesheet_3: 1800322022
-      arch spritesheet_4: 420611513
-      arch spritesheet_5: -225809697
-      arch spritesheet_6: 1394315994
-      arch spritesheet_7: -1212145337
+      wiz spritesheet_0: 1012043187
+      wiz spritesheet_1: 1048382933
+      wiz spritesheet_2: -1733825453
+      wiz spritesheet_3: -287244773
+      wiz spritesheet_4: 779352247
+      wiz spritesheet_5: 2087115511
+      wiz spritesheet_6: 1179241101
+      wiz spritesheet_7: -835320948
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -34,7 +34,9 @@ public class SlimeRespawn : MonoBehaviour
         {
             GameObject enemy = Instantiate(respawningSlime, transform.position, transform.rotation);
             SlimeDamage slimeDamage = enemy.GetComponentInChildren<SlimeDamage>();
+            EnemySlime enemySlime = enemy.GetComponent<EnemySlime>();
             slimeDamage.audioManager = audioManager;
+            enemySlime.audioManager = audioManager;
             Debug.Log("Enemy respawned");
             hasRespawned = true;
         }
