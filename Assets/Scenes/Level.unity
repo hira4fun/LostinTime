@@ -504,6 +504,22 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.x
+      value: 24.629585
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.y
+      value: 17.603615
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.x
+      value: 7.025976
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.y
+      value: 2.4981256
+      objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -517,9 +533,17 @@ PrefabInstance:
       value: SlimeRespawner (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: spawnTimer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1595186131}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: closeRespawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
 --- !u!1001 &26173094
@@ -581,6 +605,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.x
+      value: 24.760399
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.y
+      value: 17.859726
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.x
+      value: -6.922241
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.8410206
+      objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -593,10 +633,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeRespawner (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: spawnTimer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1595186131}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: closeRespawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
 --- !u!1001 &26586250
@@ -5874,6 +5926,22 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.x
+      value: 24.760403
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.y
+      value: 17.859726
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.x
+      value: -7.008503
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.y
+      value: 2.3936732
+      objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -5886,10 +5954,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: SlimeRespawner (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: spawnTimer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1595186131}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: closeRespawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
 --- !u!1 &583244126
@@ -7149,8 +7229,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Essence
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9416,8 +9496,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HEALTH
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9893,6 +9973,22 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.x
+      value: 24.629591
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.y
+      value: 17.564587
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.x
+      value: 8.66537
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.83921385
+      objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -9906,9 +10002,17 @@ PrefabInstance:
       value: SlimeRespawner (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: spawnTimer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1595186131}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: closeRespawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
 --- !u!1 &941472142
@@ -18111,6 +18215,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.x
+      value: 24.629585
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Size.y
+      value: 17.564583
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.x
+      value: 7.104044
+      objectReference: {fileID: 0}
+    - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.72211313
+      objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18124,9 +18244,21 @@ PrefabInstance:
       value: SlimeRespawner
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: spawnTimer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1595186131}
+    - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: closeRespawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8789805602942447775, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
 --- !u!1 &1691561980

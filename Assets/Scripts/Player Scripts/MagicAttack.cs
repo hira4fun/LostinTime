@@ -32,7 +32,7 @@ public class MagicAttack : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "Enemy") {
+        if(other.tag == "Enemy" || other.tag == "Destructible") {
             // Deal damage to the enemy
             Enemy enemy = other.GetComponent<Enemy>();
             EnemySlime enemySlime = other.GetComponent<EnemySlime>();
