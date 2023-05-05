@@ -467,11 +467,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.04
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.13
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -535,11 +535,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.01
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Name
@@ -547,7 +547,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -2346,8 +2346,14 @@ MonoBehaviour:
   unreadPages:
   - DOOR OPEN
   - WE'RE FREE!!!!
+  - I cant believe that we have found a way out!
+  - It was an honor working with you but now it is time for me to return to my hometime
+  - 'Thank you both for all your help! '
+  - I'll Always remember you!
+  - HUG SISTER
+  - take care of yourself young researcher shall you!
   readPages: []
-  emotes: 0700000006000000
+  emotes: 07000000060000000b0000000a0000000200000003000000070000000b000000
   controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
   startSprite: {fileID: 2080819640, guid: a54e1adc2b0ce01479e2a2f549ff25e9, type: 3}
   audioManager: {fileID: 1595186131}
@@ -3538,11 +3544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.24
+      value: -17.52
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4856,7 +4862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439671, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -3.88
       objectReference: {fileID: 0}
     - target: {fileID: 5133354599150439671, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5180,6 +5186,7 @@ Transform:
   m_Children:
   - {fileID: 1454663367}
   - {fileID: 184179707}
+  - {fileID: 1469802405}
   m_Father: {fileID: 443014236}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10546,11 +10553,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.11
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.88
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10614,11 +10621,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.19
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.64
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Name
@@ -10626,7 +10633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -12973,11 +12980,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.24
+      value: -17.52
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15987,7 +15994,7 @@ MonoBehaviour:
   cat: {fileID: 2063629469}
   box: {fileID: 1353231702}
   camOffset: 0
-  catOffset: {x: -35, y: -30}
+  catOffset: {x: 35, y: 30}
   countOffset: 10
 --- !u!1 &1353297417
 GameObject:
@@ -17388,6 +17395,87 @@ MonoBehaviour:
   startSprite: {fileID: 2109725362, guid: 8861a4c79322af7458504940b3554730, type: 3}
   audioManager: {fileID: 1595186131}
   isTalking: 1
+--- !u!1 &1469802404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1469802405}
+  - component: {fileID: 1469802407}
+  - component: {fileID: 1469802406}
+  m_Layer: 0
+  m_Name: door text trigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1469802405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469802404}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 448813455}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469802406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469802404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 0
+  repeatable: 1
+  value: 0
+  playerTag: Player
+  TextBox: {fileID: 829622463}
+  unreadPages:
+  - This door feels different than the rest
+  - Maybe it's the way out!
+  - O wild theres a message etched in it
+  - Only when you connect with your past will you be able to escape the sands of
+    time
+  - That sounds dumb
+  readPages:
+  - It says Only when you connect with your past will you be able to escape the sands
+    of time
+  emotes: 020000000200000004000000010000000300000004000000
+  controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
+  startSprite: {fileID: 2109725362, guid: 8861a4c79322af7458504940b3554730, type: 3}
+  audioManager: {fileID: 1595186131}
+  isTalking: 1
+--- !u!58 &1469802407
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469802404}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.04, y: 0.89}
+  serializedVersion: 2
+  m_Radius: 0.78
 --- !u!1 &1470667197
 GameObject:
   m_ObjectHideFlags: 0
@@ -19030,7 +19118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1622851417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -3.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19829,11 +19917,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.1
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6700001
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -19893,11 +19981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.18
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.07
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Name
@@ -19905,7 +19993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -23318,11 +23406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.24
+      value: -17.52
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.35
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
