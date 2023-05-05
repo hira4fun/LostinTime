@@ -124,11 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccedc84ddb0b5849873cb2ec2d21aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagTarget: Player
-  tagTarget2: Player2
-  tagTarget3: Player3
-  tagTarget4: Enemy
-  playerDetected: 0
+  tagTarget: Enemy
   enemyDetected: 0
   detectedObjs: []
   col: {fileID: 3651074697092290623}
@@ -179,3 +175,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawningSlime: {fileID: 6756582486122045426, guid: 41e59a0be105bf247b01fa138fd67d15, type: 3}
   respawnDetection: {fileID: 8918435490146880413}
+  spawnTimer: 3
+  audioManager: {fileID: 0}
