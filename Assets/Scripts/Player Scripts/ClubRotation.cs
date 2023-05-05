@@ -21,22 +21,18 @@ public class ClubRotation : MonoBehaviour
 
         if(caveController.faceDir == 1){
             cRotation = new Vector3(0, 0, 180);
-            Debug.Log("hitbox facing north");
         }
 
         if(caveController.faceDir == 2){
             cRotation = new Vector3(0, 0, 0);
-            Debug.Log("hitbox facing south");
         }
 
         if(caveController.faceDir == 3){
             cRotation = new Vector3(0, 0, 90);
-            Debug.Log("hitbox facing east");
         }
 
         if(caveController.faceDir == 4){
             cRotation = new Vector3(0, 0, 270);
-            Debug.Log("hitbox facing west");
         }
 
         transform.rotation = Quaternion.Euler(cRotation);

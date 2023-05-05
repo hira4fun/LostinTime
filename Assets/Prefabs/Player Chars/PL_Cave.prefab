@@ -72,7 +72,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7767bef2d6d824e4e860ab180198d2de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clubCollider: {fileID: 0}
+  clubCollider: {fileID: 1981877843602093126}
   damage: 4
 --- !u!212 &1311385305549638850
 SpriteRenderer:
@@ -357,7 +357,6 @@ MonoBehaviour:
     maxNormalAngle: 0
   clubAttack: {fileID: 4338954883765945305}
   myGameObject: {fileID: 3048859438049508116}
-  health: 5
   faceDir: 2
 --- !u!95 &3106808842010560561
 Animator:

@@ -7068,6 +7068,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8789805602942447775, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8918435490146880413, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: col
       value: 

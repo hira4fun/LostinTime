@@ -21,22 +21,18 @@ public class WhipRotation : MonoBehaviour
 
         if(arcController.faceDir == 1){
             wRotation = new Vector3(0, 0, 180);
-            Debug.Log("hitbox facing north");
         }
 
         if(arcController.faceDir == 2){
             wRotation = new Vector3(0, 0, 0);
-            Debug.Log("hitbox facing south");
         }
 
         if(arcController.faceDir == 3){
             wRotation = new Vector3(0, 0, 90);
-            Debug.Log("hitbox facing east");
         }
 
         if(arcController.faceDir == 4){
             wRotation = new Vector3(0, 0, 270);
-            Debug.Log("hitbox facing west");
         }
 
         transform.rotation = Quaternion.Euler(wRotation);

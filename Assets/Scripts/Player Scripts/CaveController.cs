@@ -54,6 +54,7 @@ public class CaveController : MonoBehaviour
         //activates club hitbox for half a second, then deactivates it
         if (Input.GetKeyDown(KeyCode.Space)) {
             clubAttack.Attack();
+            Debug.Log("Test");
             Invoke("toggleClubBox", 0.4f);
             Invoke("toggleClubBox", 0.6f);
         }
