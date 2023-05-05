@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1981877843602093126}
   - component: {fileID: 2663731314302626910}
   - component: {fileID: 3224720689288012110}
+  - component: {fileID: 1497304770518361339}
   m_Layer: 6
   m_Name: MagicHitbox
   m_TagString: Untagged
@@ -51,7 +52,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.48, y: 1.48}
+    oldSize: {x: 0.96, y: 0.96}
     newSize: {x: 1.48, y: 1.48}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -116,8 +117,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 47d9d270483767d44b2ef0a8da994f67, type: 3}
-  m_Color: {r: 0, g: 1, b: 0, a: 0.2509804}
+  m_Sprite: {fileID: -665792331, guid: fff9b71f2f6b0464abd3deee3695479e, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -127,6 +128,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1497304770518361339
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3048859438049508116}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 174cf43f710a21949b39c263da0736d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5133354598159966517
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +309,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.9200001, y: 1.9207032}
+    oldSize: {x: 1.9204689, y: 1.92}
     newSize: {x: 1.92, y: 1.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -357,7 +378,6 @@ MonoBehaviour:
     maxNormalAngle: 0
   magicAttack: {fileID: 2663731314302626910}
   myGameObject: {fileID: 3048859438049508116}
-  health: 3
   faceDir: 2
 --- !u!95 &3106808842010560561
 Animator:

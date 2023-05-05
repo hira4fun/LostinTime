@@ -71,6 +71,7 @@ public class EnemySlime : MonoBehaviour
 
     private void RemoveEnemy() {
         audioManager.Play("slimedeath");
+        Debug.Log("Slime defeated");
         Destroy(gameObject);
         essenceDisplay.essence++; // Raise the essence value in EssenceDisplay script by 1
         essenceText.text = "Essence : " + essenceDisplay.essence; // Update the essence text with the new value
