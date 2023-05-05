@@ -33,13 +33,13 @@ public class WorkingWallTrigger : MonoBehaviour
     {
         float catY = cat.transform.position.y;
         float boxY = box.transform.localPosition.y;
-        if (catY < boxY && counter >= countOffset && col.CompareTag("Player"))
+        if (catY < boxY && counter >= countOffset && col.CompareTag("Player") || col.CompareTag("Player3"))
         {
             cam.transform.position += moveCam;
             cat.transform.position += new Vector3(moveCat.x, moveCat.y, 0);
             counter = 0;
         }
-        else if (catY >= boxY && counter > countOffset && col.CompareTag("Player"))
+        else if (catY >= boxY && counter > countOffset && col.CompareTag("Player") || col.CompareTag("Player3"))
         {
             cam.transform.position -= moveCam;
             cat.transform.position -= new Vector3(moveCat.x, moveCat.y, 0);

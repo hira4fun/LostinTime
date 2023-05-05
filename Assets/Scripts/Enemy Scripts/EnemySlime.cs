@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class EnemySlime : MonoBehaviour
 {
@@ -9,7 +11,10 @@ public class EnemySlime : MonoBehaviour
     public float moveSpeed = 500f;
     // public float damage = 1;
     public float knockbackForce = 300f;
+    public AudioManager audioManager;
     Rigidbody2D rb;
+    public TextMeshProUGUI essenceText;
+    private EssenceDisplay essenceDisplay; // Reference to EssenceDisplay script
 
     void FixedUpdate(){
         if(slimeDetection.detectedObjs.Count > 0){
@@ -55,13 +60,19 @@ public class EnemySlime : MonoBehaviour
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
+        essenceDisplay = FindObjectOfType<EssenceDisplay>(); // Find and store the EssenceDisplay script
+
     }
 
     public void Defeated() {
+       
         RemoveEnemy();
     }
 
     private void RemoveEnemy() {
+        audioManager.Play("slimedeath");
         Destroy(gameObject);
+        essenceDisplay.essence++; // Raise the essence value in EssenceDisplay script by 1
+        essenceText.text = "Essence : " + essenceDisplay.essence; // Update the essence text with the new value
     }
 }
