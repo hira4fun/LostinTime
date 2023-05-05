@@ -55,7 +55,7 @@ public class WizController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) {
             magicAttack.Attack();
             toggleMagicBox();
-            Invoke("toggleMagicBox", 0.7f);
+            Invoke("toggleMagicBox", 1f);
         }
     }
 
