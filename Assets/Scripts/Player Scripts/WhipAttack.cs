@@ -29,7 +29,7 @@ public class WhipAttack : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.tag == "Enemy" || other.tag == "Destructible") {
+        if(other.tag == "Enemy") {
             // Deal damage to the enemy
             Enemy enemy = other.GetComponent<Enemy>();
             EnemySlime enemySlime = other.GetComponent<EnemySlime>();
