@@ -21,6 +21,8 @@ public class WizController : MonoBehaviour
     float yMove;
     public static float health = 3;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    public GameObject endScreen;
+
 
     bool canMove = true;
 
@@ -187,6 +189,7 @@ public class WizController : MonoBehaviour
     }
 
     private void RemovePlayer() {
-        Destroy(gameObject);
+        pause = true;
+        endScreen.SetActive(true);
     }
 }

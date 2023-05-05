@@ -21,6 +21,7 @@ public class ArcController : MonoBehaviour
     float yMove;
     public static float health = 4;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    public GameObject endScreen;
 
     bool canMove = true;
 
@@ -187,6 +188,7 @@ public class ArcController : MonoBehaviour
     }
 
     private void RemovePlayer() {
-        Destroy(gameObject);
+        pause = true;
+        endScreen.SetActive(true);
     }
 }

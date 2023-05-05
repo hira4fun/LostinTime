@@ -21,6 +21,8 @@ public class CaveController : MonoBehaviour
     float yMove;
     public static float health = 5;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
+    public GameObject endScreen;
+
 
     bool canMove = true;
 
@@ -188,6 +190,7 @@ public class CaveController : MonoBehaviour
     }
 
     private void RemovePlayer() {
-        Destroy(gameObject);
+        pause = true;
+        endScreen.SetActive(true);
     }
 }
