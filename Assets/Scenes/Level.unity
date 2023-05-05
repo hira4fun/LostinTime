@@ -542,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -4543,6 +4543,7 @@ Transform:
   - {fileID: 540650139}
   - {fileID: 1333559056}
   - {fileID: 904713479}
+  - {fileID: 1622851418}
   m_Father: {fileID: 404105625}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10032,7 +10033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -17479,6 +17480,88 @@ Transform:
   m_Father: {fileID: 207980965}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1622851417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622851418}
+  - component: {fileID: 1622851420}
+  - component: {fileID: 1622851419}
+  m_Layer: 0
+  m_Name: intro cut scene tbh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622851418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622851417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 443014236}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622851419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622851417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  playerTag: Player
+  TextBox: {fileID: 829622463}
+  unreadPages:
+  - zzzz ajhsfgasjhfg im awake!
+  - Wait where am i?
+  - 'I was just in the research center looking into my ancestry '
+  - when i might've nodded off for like a second,,
+  - this place is an archaeologist's dream though, the architecture looks like a
+    mess of time periods
+  - sdhjgasjfg is that a slime? maybe this is more of a nightmare
+  - well regardless, whether this is a dream or a nightmare i'd better get looking
+    for a way out
+  readPages: []
+  emotes: 01000000020000000400000003000000030000000200000004000000
+  controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
+  startSprite: {fileID: 2109725362, guid: 8861a4c79322af7458504940b3554730, type: 3}
+  audioManager: {fileID: 1595186131}
+  isTalking: 1
+--- !u!58 &1622851420
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622851417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.76
 --- !u!1 &1623371529
 GameObject:
   m_ObjectHideFlags: 0
@@ -18282,7 +18365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -21278,7 +21361,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1996187971}
   - component: {fileID: 1996187972}
-  - component: {fileID: 1996187973}
   - component: {fileID: 1996187975}
   - component: {fileID: 1996187974}
   m_Layer: 0
@@ -21329,31 +21411,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.05, y: 2.08}
   m_EdgeRadius: 0
---- !u!114 &1996187973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996187970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceInteract: 0
-  repeatable: 0
-  value: 0
-  playerTag: Player
-  TextBox: {fileID: 829622463}
-  unreadPages:
-  - 
-  readPages: []
-  emotes: 00000000
-  controller: {fileID: 9100000, guid: 0ddeb95f7d63fda439703031d58e1aa5, type: 2}
-  startSprite: {fileID: -1095835564, guid: 78cbd7b58f61f9f47a2f153f3c10ec7d, type: 3}
-  audioManager: {fileID: 1595186131}
-  isTalking: 1
 --- !u!114 &1996187974
 MonoBehaviour:
   m_ObjectHideFlags: 0
