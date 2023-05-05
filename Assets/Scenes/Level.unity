@@ -462,11 +462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.73
+      value: -6.04
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.52
+      value: -4.13
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -506,19 +506,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.x
-      value: 24.629585
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.y
-      value: 17.603615
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.x
-      value: 7.025976
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.y
-      value: 2.4981256
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -528,13 +528,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.28
+      objectReference: {fileID: 0}
     - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Name
       value: SlimeRespawner (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -607,19 +615,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.x
-      value: 24.760399
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.y
-      value: 17.859726
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.x
-      value: -6.922241
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.y
-      value: -0.8410206
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -1912,14 +1920,15 @@ MonoBehaviour:
   repeatable: 0
   value: 0
   playerTag: Player2
-  TextBox: {fileID: 829622463}
+  TextBox: {fileID: 194740327}
   unreadPages:
   - 'ME CAVEMAN '
   - ME HELP SISTER!!!
+  - I can't believe that worked tbh
   readPages: []
-  emotes: 0000000000000000
-  controller: {fileID: 22100000, guid: a287e73abbf59654d926ab06a6f7d2cb, type: 2}
-  startSprite: {fileID: 21300016, guid: f776e2e9690501e41a2e5b81ceb440b9, type: 3}
+  emotes: 080000000600000002000000
+  controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
+  startSprite: {fileID: 2080819640, guid: a54e1adc2b0ce01479e2a2f549ff25e9, type: 3}
   audioManager: {fileID: 1595186131}
   isTalking: 1
 --- !u!58 &181766968
@@ -1938,6 +1947,11 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.15
+--- !u!1 &194740327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7059772333487008123, guid: 6ea336e93a8128346aad568255a7e6af, type: 3}
+  m_PrefabInstance: {fileID: 830492503}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &196536275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,7 +2679,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -2681,11 +2695,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.99
+      value: -11.32
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.41
+      value: -2.6699982
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3400,8 +3414,15 @@ MonoBehaviour:
   unreadPages:
   - egads! as i suspected this fowl lock was cursed!
   - hopefully i will be able to escape this spell so my ancestor may break free
+  - Woah what is this place?
+  - right now we are stuck in the astral plane, the rift between time that this cursed
+    place rests upon
+  - THIS PLACE SUCKS
+  - 'ignore my friend here, it''s not all bad,, '
+  - and i'm sure that now that you're here we'll find a way to escape this hellish
+    realm
   readPages: []
-  emotes: 0c0000000b000000
+  emotes: 0c0000000b000000020000000a000000080000000c0000000a000000
   controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
   startSprite: {fileID: 1012043187, guid: 5293f7bb3eed98b459138943baeea04c, type: 3}
   audioManager: {fileID: 1595186131}
@@ -4114,6 +4135,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 1296202625
       objectReference: {fileID: 0}
+    - target: {fileID: 3048859438049508116, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3224720689288012110, guid: 06f7e41fa0fcd17428c246440a571a10, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -4205,7 +4230,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -4217,11 +4242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.75
+      value: -12.08
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -12.22
+      value: -1.4799995
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4518,6 +4543,7 @@ Transform:
   - {fileID: 540650139}
   - {fileID: 1333559056}
   - {fileID: 904713479}
+  - {fileID: 1622851418}
   m_Father: {fileID: 404105625}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4530,7 +4556,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -4546,11 +4572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.65
+      value: -12.98
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.430001
+      value: -2.6900005
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4696,7 +4722,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1543082774}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &453907302
 MonoBehaviour:
@@ -4756,7 +4782,7 @@ MonoBehaviour:
   - i can use some of these to uncurse the seal and open the door
   - you shall overcome this quest my brave child
   readPages: []
-  emotes: 0a000000090000000b000000
+  emotes: 0b0000000a0000000c000000
   controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
   startSprite: {fileID: 1012043187, guid: 5293f7bb3eed98b459138943baeea04c, type: 3}
   audioManager: {fileID: 1595186131}
@@ -5665,7 +5691,7 @@ MonoBehaviour:
   - to break the curse i will need a mushroom of magic!
   readPages:
   - i can break this door however doing so will require mushrooms of magic
-  emotes: 0b0000000a000000090000000b000000
+  emotes: 0c0000000b0000000a0000000b000000
   controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
   startSprite: {fileID: 1012043187, guid: 5293f7bb3eed98b459138943baeea04c, type: 3}
   audioManager: {fileID: 1595186131}
@@ -5928,19 +5954,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.x
-      value: 24.760403
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.y
-      value: 17.859726
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.x
-      value: -7.008503
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.y
-      value: 2.3936732
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7229,8 +7255,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Essence
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9496,8 +9522,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HEALTH
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9931,11 +9957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.98
+      value: -7.29
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.27
+      value: -2.88
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9975,19 +10001,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.x
-      value: 24.629591
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.y
-      value: 17.564587
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.x
-      value: 8.66537
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.y
-      value: 0.83921385
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -9997,13 +10023,17 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Name
       value: SlimeRespawner (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -11436,17 +11466,17 @@ MonoBehaviour:
   repeatable: 1
   value: 0
   playerTag: Player2
-  TextBox: {fileID: 829622463}
+  TextBox: {fileID: 194740327}
   unreadPages:
   - THIS DOOR LOOKS SILLY
   - CANT OPEN IT NOOOO
   readPages:
   - SHOULD GET SISTER TO TALK TO DOOR
-  emotes: 000000000000000000000000
-  controller: {fileID: 9100000, guid: 812fe5a18c02cf24fa48f4d93164f45f, type: 2}
-  startSprite: {fileID: -489479338, guid: a17fb83bc4dc5b64a9f7e2245d424256, type: 3}
+  emotes: 070000000800000005000000
+  controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
+  startSprite: {fileID: 2080819640, guid: a54e1adc2b0ce01479e2a2f549ff25e9, type: 3}
   audioManager: {fileID: 1595186131}
-  isTalking: 0
+  isTalking: 1
 --- !u!1 &1092016724
 GameObject:
   m_ObjectHideFlags: 0
@@ -16650,10 +16680,10 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 453907301}
   - {fileID: 1752334218}
   - {fileID: 1014746123}
   - {fileID: 1780693627}
+  - {fileID: 453907301}
   - {fileID: 1479381849}
   - {fileID: 1863658238}
   - {fileID: 456035619}
@@ -17450,6 +17480,88 @@ Transform:
   m_Father: {fileID: 207980965}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1622851417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622851418}
+  - component: {fileID: 1622851420}
+  - component: {fileID: 1622851419}
+  m_Layer: 0
+  m_Name: intro cut scene tbh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622851418
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622851417}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 443014236}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622851419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622851417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceInteract: 1
+  repeatable: 0
+  value: 0
+  playerTag: Player
+  TextBox: {fileID: 829622463}
+  unreadPages:
+  - zzzz ajhsfgasjhfg im awake!
+  - Wait where am i?
+  - 'I was just in the research center looking into my ancestry '
+  - when i might've nodded off for like a second,,
+  - this place is an archaeologist's dream though, the architecture looks like a
+    mess of time periods
+  - sdhjgasjfg is that a slime? maybe this is more of a nightmare
+  - well regardless, whether this is a dream or a nightmare i'd better get looking
+    for a way out
+  readPages: []
+  emotes: 01000000020000000400000003000000030000000200000004000000
+  controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
+  startSprite: {fileID: 2109725362, guid: 8861a4c79322af7458504940b3554730, type: 3}
+  audioManager: {fileID: 1595186131}
+  isTalking: 1
+--- !u!58 &1622851420
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622851417}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.76
 --- !u!1 &1623371529
 GameObject:
   m_ObjectHideFlags: 0
@@ -18177,11 +18289,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.79
+      value: -6.1
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.06
+      value: -1.6700001
       objectReference: {fileID: 0}
     - target: {fileID: 1627277651304393298, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -18217,19 +18329,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.x
-      value: 24.629585
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Size.y
-      value: 17.564583
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.x
-      value: 7.104044
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3651074697092290623, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Offset.y
-      value: -0.72211313
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_LocalScale.x
@@ -18239,13 +18351,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4949306958989607169, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.76
+      objectReference: {fileID: 0}
     - target: {fileID: 7583429400978143943, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: m_Name
       value: SlimeRespawner
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: spawnTimer
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7690681366019084863, guid: 2a5c8540a7a428948bd083f38925b79d, type: 3}
       propertyPath: audioManager
@@ -21241,7 +21361,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1996187971}
   - component: {fileID: 1996187972}
-  - component: {fileID: 1996187973}
   - component: {fileID: 1996187975}
   - component: {fileID: 1996187974}
   m_Layer: 0
@@ -21292,31 +21411,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.05, y: 2.08}
   m_EdgeRadius: 0
---- !u!114 &1996187973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996187970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58ad46602c4301d47a7b6f71726a1cd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceInteract: 0
-  repeatable: 0
-  value: 0
-  playerTag: Player
-  TextBox: {fileID: 829622463}
-  unreadPages:
-  - 
-  readPages: []
-  emotes: 00000000
-  controller: {fileID: 9100000, guid: 0ddeb95f7d63fda439703031d58e1aa5, type: 2}
-  startSprite: {fileID: -1095835564, guid: 78cbd7b58f61f9f47a2f153f3c10ec7d, type: 3}
-  audioManager: {fileID: 1595186131}
-  isTalking: 1
 --- !u!114 &1996187974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21353,14 +21447,14 @@ MonoBehaviour:
   repeatable: 0
   value: 0
   playerTag: Player2
-  TextBox: {fileID: 829622463}
+  TextBox: {fileID: 194740327}
   unreadPages:
   - FANCY ROCK!
   - THIS FANCY ROCK IS GOOD PLACE TO PUT CLUB
   readPages: []
-  emotes: 0000000000000000
-  controller: {fileID: 9100000, guid: 812fe5a18c02cf24fa48f4d93164f45f, type: 2}
-  startSprite: {fileID: -489479338, guid: a17fb83bc4dc5b64a9f7e2245d424256, type: 3}
+  emotes: 0700000006000000
+  controller: {fileID: 9100000, guid: 805e8a262a2b76f4fafab5593a3741f1, type: 2}
+  startSprite: {fileID: 2080819640, guid: a54e1adc2b0ce01479e2a2f549ff25e9, type: 3}
   audioManager: {fileID: 1595186131}
   isTalking: 1
 --- !u!1 &2010508985
